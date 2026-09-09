@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f4f6;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin: 8px 0 25px;
+}
+
+.balance-box {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.balance-box h2 {
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+.summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.income-box, .expense-box {
+    background: white;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.income-box p {
+    color: green;
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.expense-box p {
+    color: red;
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.form-box, .history {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.form-box h2, .history h2 {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9fafb;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 5px solid #999;
+}
+
+li.income {
+    border-left-color: green;
+}
+
+li.expense {
+    border-left-color: red;
+}
+
+.transaction-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.delete-btn {
+    width: auto;
+    background: #dc2626;
+    padding: 8px 12px;
+}
+
+@media (max-width: 500px) {
+    .summary {
+        flex-direction: column;
+    }
+
+    .income-box, .expense-box {
+        width: 100%;
+    }
+}
